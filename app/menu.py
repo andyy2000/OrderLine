@@ -17,7 +17,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from pydantic import BaseModel, Field, model_validator
-o
+
 WEEKDAYS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
 
 # Short forms callers and staff use for sizes.
