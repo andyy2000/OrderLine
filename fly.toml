@@ -1,0 +1,46 @@
+# Fly.io deployment (one small VM near Virginia for East Coast callers).
+#   fly launch --copy-config --no-deploy && fly volumes create orderline_data --size 1 --region iad
+#   fly secrets set ANTHROPIC_API_KEY=... DEEPGRAM_API_KEY=... CARTESIA_API_KEY=... CARTESIA_VOICE_ID=... \
+#       TWILIO_ACCOUNT_SID=... TWILIO_AUTH_TOKEN=... ADMIN_TOKEN=... \
+#       BOT_WS_URL=wss://<app>.fly.dev/ws PUBLIC_BASE_URL=https://<app>.fly.dev
+#   fly deploy
+# Twilio webhook: https://<app>.fly.dev/twilio/voice?restaurant=tops-china
+app = "orderline"
+primary_region = "iad"
+
+[build]
+
+[env]
+  ORDERLINE_DB = "/data/orderline.db"
+
+[mounts]
+  source = "orderline_data"
+  destination = "/data"
+
+# The kitchen server and the bot run as two processes in one VM, sharing the volume.
+[processes]
+  kitchen = "uvicorn app.server:app --host 0.0.0.0 --port 8000"
+  bot = "python -m app.voice.bot -t twilio --host 0.0.0.0 --port 7860"
+
+[[services]]
+  processes = ["kitchen"]
+  internal_port = 8000
+  protocol = "tcp"
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+[[services]]
+  processes = ["bot"]
+  internal_port = 7860
+  protocol = "tcp"
+  [[services.ports]]
+    port = 7860
+    handlers = ["tls", "http"]
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "1gb"

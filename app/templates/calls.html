@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calls · {{RESTAURANT_NAME}}</title>
+<style>
+  :root { --bg: #14120f; --panel: #1e1b17; --ink: #f6f1e7; --muted: #8b8478; --line: #2d2924;
+          --good: #3f9b5f; --warn: #d99a2b; --bad: #e0482f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.4 ui-sans-serif, system-ui, sans-serif; }
+  header { display: flex; align-items: center; gap: 16px; padding: 14px 20px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 20px; margin: 0; }
+  header a { color: var(--muted); text-decoration: none; margin-left: auto; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; padding: 20px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  .stat b { display: block; font-size: 26px; font-weight: 700; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .wrap { padding: 0 20px 40px; display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 20px; }
+  .list { display: grid; gap: 8px; align-content: start; }
+  .call { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; }
+  .call.active { border-color: var(--ink); }
+  .call .o { font-weight: 700; }
+  .o-order { color: #9fe0b4; } .o-transferred { color: #ffd98a; } .o-no_order { color: var(--muted); }
+  .call small { color: var(--muted); }
+  .flag { float: right; color: var(--bad); }
+  .detail { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-height: 200px; }
+  .turn { padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .turn.user { color: #ffe9b8; }
+  .turn .who { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+  .tool { font: 12px ui-monospace, Menlo, monospace; color: var(--muted); white-space: pre-wrap; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; border: 1px solid var(--line); background: transparent; color: var(--ink); padding: 6px 12px; }
+  select { font: inherit; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 6px; }
+  @media (max-width: 800px) { .wrap { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>{{RESTAURANT_NAME}} · Calls</h1>
+  <select id="days"><option value="1">Today</option><option value="7" selected>Last 7 days</option><option value="30">Last 30 days</option></select>
+  <a id="back" href="#">← Kitchen</a>
+</header>
+<section class="stats" id="stats"></section>
+<div class="wrap">
+  <div class="list" id="list"><div style="color:var(--muted)">No calls yet.</div></div>
+  <div class="detail" id="detail"><span style="color:var(--muted)">Pick a call to read the transcript.</span></div>
+</div>
+<script>
+const params = new URLSearchParams(location.search);
+const rid = params.get("restaurant"), token = params.get("token") || "";
+const q = (extra = "") => `?restaurant=${encodeURIComponent(rid)}${token ? `&token=${encodeURIComponent(token)}` : ""}${extra}`;
+const headers = { "Content-Type": "application/json", ...(token ? { "X-Admin-Token": token } : {}) };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+const money = c => `$${(c / 100).toFixed(2)}`;
+const when = iso => { const d = new Date(iso); return isNaN(d) ? iso : d.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); };
+document.getElementById("back").href = "/kitchen" + q();
+
+async function loadStats() {
+  const s = await (await fetch(`/api/stats${q("&days=" + document.getElementById("days").value)}`, { headers })).json();
+  const pct = x => `${Math.round(x * 100)}%`;
+  document.getElementById("stats").innerHTML = [
+    [s.calls, "calls"], [s.orders, "orders"], [money(s.revenue_cents), "phone revenue"],
+    [money(s.average_order_cents), "avg order"], [pct(s.completion_rate), "calls → orders"],
+    [pct(s.transfer_rate), "handed to staff"], [s.average_call_seconds != null ? s.average_call_seconds + "s" : "–", "avg call length"],
+  ].map(([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${l}</span></div>`).join("");
+}
+
+let calls = [];
+async function loadCalls() {
+  calls = await (await fetch(`/api/calls${q()}`, { headers })).json();
+  const list = document.getElementById("list");
+  if (!calls.length) return;
+  list.innerHTML = calls.map(c => `<div class="call" data-id="${esc(c.call_id)}">
+      ${c.flagged ? '<span class="flag">⚑ flagged</span>' : ""}
+      <span class="o o-${esc(c.outcome || "no_order")}">${esc((c.outcome || "in progress").replace("_", " "))}</span>
+      ${c.transfer_reason ? ` · ${esc(c.transfer_reason)}` : ""}<br>
+      <small>${when(c.started_at)}${c.caller_phone ? " · " + esc(c.caller_phone) : ""}</small></div>`).join("");
+}
+
+function fmtPhone(d) { return d && d.length === 10 ? `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}` : (d || ""); }
+
+async function showCall(id) {
+  document.querySelectorAll(".call").forEach(el => el.classList.toggle("active", el.dataset.id === id));
+  const c = await (await fetch(`/api/calls/${encodeURIComponent(id)}${q()}`, { headers })).json();
+  const turns = (c.transcript || []).map(m => {
+    const role = m.role === "user" ? "Caller" : m.role === "assistant" ? "AI" : m.role;
+    let text = "";
+    if (typeof m.content === "string") text = m.content;
+    else if (Array.isArray(m.content)) text = m.content.map(b => b.text || (b.name ? `[${b.name}]` : "") || (b.type === "tool_result" ? "[result]" : "")).join(" ");
+    if (!text.trim() || m.role === "developer" || m.role === "system") return "";
+    return `<div class="turn ${m.role}"><div class="who">${esc(role)}</div>${esc(text)}</div>`;
+  }).join("");
+  const tools = (c.tool_log || []).map(t => `${t.tool}(${JSON.stringify(t.args)}) → ${t.result && t.result.ok ? "ok" : (t.result && t.result.error) || "?"}`).join("\n");
+  const metrics = c.metrics ? Object.entries(c.metrics).map(([k, v]) => `${k}: ${v}`).join(" · ") : "";
+  document.getElementById("detail").innerHTML = `
+    <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+      <b>${esc(c.outcome || "in progress")}</b> <span style="color:var(--muted)">${when(c.started_at)}</span>
+      <button id="flag">${c.flagged ? "Unflag" : "Flag for review"}</button>
+      ${c.caller_phone ? `<span style="color:var(--muted)">${esc(fmtPhone(c.caller_phone))}</span><button id="block">Block this number</button>` : ""}</div>
+    ${metrics ? `<div class="tool" style="margin-bottom:10px">${esc(metrics)}</div>` : ""}
+    ${turns || '<span style="color:var(--muted)">No transcript saved.</span>'}
+    ${tools ? `<details style="margin-top:12px"><summary>Tool calls</summary><div class="tool">${esc(tools)}</div></details>` : ""}`;
+  document.getElementById("flag").onclick = async () => {
+    await fetch(`/api/calls/${encodeURIComponent(id)}/flag${q()}`, { method: "POST", headers, body: JSON.stringify({ flagged: !c.flagged }) });
+    await loadCalls(); showCall(id);
+  };
+  const block = document.getElementById("block");
+  if (block) block.onclick = async () => {
+    if (!confirm(`Block ${fmtPhone(c.caller_phone)}? Future calls from it get "please call the restaurant directly" and hang up. Unblock on the kitchen page.`)) return;
+    await fetch(`/api/block${q()}`, { method: "POST", headers, body: JSON.stringify({ phone: c.caller_phone, blocked: true }) });
+    block.textContent = "Blocked"; block.disabled = true;
+  };
+}
+document.getElementById("list").addEventListener("click", e => { const el = e.target.closest(".call"); if (el) showCall(el.dataset.id); });
+document.getElementById("days").onchange = loadStats;
+loadStats(); loadCalls();
+</script>
+</body>
+</html>

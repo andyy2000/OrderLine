@@ -1,0 +1,96 @@
+{
+  "_note": "Made-up sample menu used by the tests and evals. The real one is tops-china.json.",
+  "restaurant": {
+    "id": "sample-china",
+    "name": "Sample China",
+    "phone": "+18045550100",
+    "address": "123 Main Street (replace with real address)",
+    "timezone": "America/New_York",
+    "tax_rate": 0.053,
+    "pickup_minutes": 15,
+    "hours": {
+      "mon": [["11:00", "22:00"]],
+      "tue": [["11:00", "22:00"]],
+      "wed": [["11:00", "22:00"]],
+      "thu": [["11:00", "22:00"]],
+      "fri": [["11:00", "22:30"]],
+      "sat": [["11:00", "22:30"]],
+      "sun": [["12:00", "21:30"]]
+    },
+    "payment_note": "Pay at pickup with cash or card."
+  },
+  "items": [
+    {"id": "egg-roll", "name": "Egg Roll", "category": "Appetizers", "price_cents": 175,
+     "aliases": ["eggroll", "egg rolls"], "kitchen_name": "春卷"},
+    {"id": "crab-rangoon", "name": "Crab Rangoon", "category": "Appetizers", "price_cents": 695,
+     "aliases": ["crab wontons", "cheese wontons", "crab rangoons"], "description": "8 pieces"},
+    {"id": "fried-dumplings", "name": "Fried Dumplings", "category": "Appetizers", "price_cents": 795,
+     "aliases": ["potstickers", "fried pork dumplings"], "description": "8 pieces", "kitchen_name": "锅贴"},
+    {"id": "wonton-soup", "name": "Wonton Soup", "category": "Soups",
+     "sizes": [{"name": "Pint", "price_cents": 375}, {"name": "Quart", "price_cents": 625}],
+     "aliases": ["won ton soup"], "kitchen_name": "云吞汤"},
+    {"id": "egg-drop-soup", "name": "Egg Drop Soup", "category": "Soups",
+     "sizes": [{"name": "Pint", "price_cents": 325}, {"name": "Quart", "price_cents": 575}],
+     "aliases": ["egg flower soup"], "kitchen_name": "蛋花汤"},
+    {"id": "hot-sour-soup", "name": "Hot and Sour Soup", "category": "Soups",
+     "sizes": [{"name": "Pint", "price_cents": 375}, {"name": "Quart", "price_cents": 625}],
+     "aliases": ["hot & sour soup", "hot n sour"], "kitchen_name": "酸辣汤"},
+    {"id": "general-tso", "name": "General Tso's Chicken", "category": "Chicken",
+     "sizes": [{"name": "Small", "price_cents": 895}, {"name": "Large", "price_cents": 1295}],
+     "option_groups": [
+       {"name": "Spice level", "min": 0, "max": 1, "options": [{"name": "Mild"}, {"name": "Spicy"}, {"name": "Extra spicy"}]},
+       {"name": "Rice", "min": 0, "max": 1, "options": [{"name": "White rice"}, {"name": "Fried rice", "price_cents": 150}]}
+     ],
+     "aliases": ["general tso", "general tsos", "general chicken", "general tao", "general taos chicken", "general gau"],
+     "kitchen_name": "左宗鸡"},
+    {"id": "sesame-chicken", "name": "Sesame Chicken", "category": "Chicken",
+     "sizes": [{"name": "Small", "price_cents": 895}, {"name": "Large", "price_cents": 1295}],
+     "option_groups": [
+       {"name": "Rice", "min": 0, "max": 1, "options": [{"name": "White rice"}, {"name": "Fried rice", "price_cents": 150}]}
+     ],
+     "kitchen_name": "芝麻鸡"},
+    {"id": "chicken-broccoli", "name": "Chicken with Broccoli", "category": "Chicken",
+     "sizes": [{"name": "Small", "price_cents": 845}, {"name": "Large", "price_cents": 1195}],
+     "option_groups": [
+       {"name": "Rice", "min": 0, "max": 1, "options": [{"name": "White rice"}, {"name": "Fried rice", "price_cents": 150}]}
+     ],
+     "aliases": ["broccoli chicken", "chicken and broccoli"], "kitchen_name": "芥兰鸡"},
+    {"id": "kung-pao-chicken", "name": "Kung Pao Chicken", "category": "Chicken",
+     "sizes": [{"name": "Small", "price_cents": 845}, {"name": "Large", "price_cents": 1195}],
+     "option_groups": [
+       {"name": "Spice level", "min": 0, "max": 1, "options": [{"name": "Mild"}, {"name": "Spicy"}, {"name": "Extra spicy"}]},
+       {"name": "Rice", "min": 0, "max": 1, "options": [{"name": "White rice"}, {"name": "Fried rice", "price_cents": 150}]}
+     ],
+     "aliases": ["kung pow chicken", "gong bao chicken"], "kitchen_name": "宫保鸡丁"},
+    {"id": "beef-broccoli", "name": "Beef with Broccoli", "category": "Beef",
+     "sizes": [{"name": "Small", "price_cents": 945}, {"name": "Large", "price_cents": 1345}],
+     "option_groups": [
+       {"name": "Rice", "min": 0, "max": 1, "options": [{"name": "White rice"}, {"name": "Fried rice", "price_cents": 150}]}
+     ],
+     "aliases": ["broccoli beef", "beef and broccoli"], "kitchen_name": "芥兰牛"},
+    {"id": "lo-mein", "name": "Lo Mein", "category": "Noodles and Rice",
+     "sizes": [{"name": "Small", "price_cents": 795}, {"name": "Large", "price_cents": 1095}],
+     "option_groups": [
+       {"name": "Protein", "min": 1, "max": 1, "options": [
+         {"name": "Vegetable"}, {"name": "Chicken"}, {"name": "Pork"},
+         {"name": "Beef", "price_cents": 100}, {"name": "Shrimp", "price_cents": 150}, {"name": "House special", "price_cents": 200}]}
+     ],
+     "aliases": ["lomein", "low mein"], "kitchen_name": "捞面"},
+    {"id": "fried-rice", "name": "Fried Rice", "category": "Noodles and Rice",
+     "sizes": [{"name": "Small", "price_cents": 745}, {"name": "Large", "price_cents": 1045}],
+     "option_groups": [
+       {"name": "Protein", "min": 1, "max": 1, "options": [
+         {"name": "Vegetable"}, {"name": "Chicken"}, {"name": "Pork"},
+         {"name": "Beef", "price_cents": 100}, {"name": "Shrimp", "price_cents": 150}, {"name": "House special", "price_cents": 200}]}
+     ],
+     "kitchen_name": "炒饭"},
+    {"id": "white-rice", "name": "White Rice", "category": "Sides",
+     "sizes": [{"name": "Pint", "price_cents": 250}, {"name": "Quart", "price_cents": 400}],
+     "aliases": ["steamed rice", "plain rice"]},
+    {"id": "soda", "name": "Can Soda", "category": "Drinks", "price_cents": 150,
+     "option_groups": [
+       {"name": "Flavor", "min": 1, "max": 1, "options": [{"name": "Coke"}, {"name": "Diet Coke"}, {"name": "Sprite"}, {"name": "Ginger Ale"}]}
+     ],
+     "aliases": ["soda", "coke", "sprite", "pop", "can of soda"]}
+  ]
+}

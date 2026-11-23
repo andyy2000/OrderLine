@@ -1,0 +1,26 @@
+# docker compose up --build
+# Both services share one SQLite file in ./data so the bot's orders appear on the kitchen screen.
+services:
+  kitchen:
+    build: .
+    command: uvicorn app.server:app --host 0.0.0.0 --port 8000
+    env_file: .env
+    environment:
+      ORDERLINE_DB: /srv/data/orderline.db
+    volumes:
+      - ./data:/srv/data
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  bot:
+    build: .
+    command: python -m app.voice.bot -t twilio --host 0.0.0.0 --port 7860
+    env_file: .env
+    environment:
+      ORDERLINE_DB: /srv/data/orderline.db
+    volumes:
+      - ./data:/srv/data
+    ports:
+      - "7860:7860"
+    restart: unless-stopped

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "simple-two-items",
+    "caller": "You want one large General Tso's chicken and two egg rolls. Your name is Maria, your number is 804 555 0199. Answer questions briefly.",
+    "expect": {"lines": [
+      {"item_id": "general-tso", "size": "Large", "options": [], "quantity": 1},
+      {"item_id": "egg-roll", "size": null, "options": [], "quantity": 2}
+    ]}
+  },
+  {
+    "id": "nickname-and-size-question",
+    "caller": "You ask for 'general chicken' without saying a size; when asked, you want the small, extra spicy. Also a quart of wonton soup. Name Tom, number 804 555 0110.",
+    "expect": {"lines": [
+      {"item_id": "general-tso", "size": "Small", "options": ["Extra spicy"], "quantity": 1},
+      {"item_id": "wonton-soup", "size": "Quart", "options": [], "quantity": 1}
+    ]}
+  },
+  {
+    "id": "required-protein",
+    "caller": "You want a large lo mein. You don't say the protein until asked; then you pick shrimp. Name Lee, number 804 555 0111.",
+    "expect": {"lines": [
+      {"item_id": "lo-mein", "size": "Large", "options": ["Shrimp"], "quantity": 1}
+    ]}
+  },
+  {
+    "id": "changes-mind",
+    "caller": "You order a large sesame chicken and a can of Coke. Then you change your mind: make the sesame chicken a small, and add a pint of hot and sour soup. Name Dee, number 804 555 0112.",
+    "expect": {"lines": [
+      {"item_id": "sesame-chicken", "size": "Small", "options": [], "quantity": 1},
+      {"item_id": "soda", "size": null, "options": ["Coke"], "quantity": 1},
+      {"item_id": "hot-sour-soup", "size": "Pint", "options": [], "quantity": 1}
+    ]}
+  },
+  {
+    "id": "removes-item",
+    "caller": "You order crab rangoon, fried dumplings and a small beef with broccoli. Before finishing, you say to remove the dumplings. Name Sam, number 804 555 0113.",
+    "expect": {"lines": [
+      {"item_id": "crab-rangoon", "size": null, "options": [], "quantity": 1},
+      {"item_id": "beef-broccoli", "size": "Small", "options": [], "quantity": 1}
+    ]}
+  },
+  {
+    "id": "off-menu-item",
+    "caller": "You first ask for pad thai (not on the menu). When told it's not available, you take a large Kung Pao chicken, mild, instead. Name Kim, number 804 555 0114.",
+    "expect": {"lines": [
+      {"item_id": "kung-pao-chicken", "size": "Large", "options": ["Mild"], "quantity": 1}
+    ]}
+  },
+  {
+    "id": "everything-at-once",
+    "caller": "In your very first sentence you rattle off the whole order: a large sesame chicken with fried rice, a pint of egg drop soup, three egg rolls, and a Sprite. Name Jo, number 804 555 0115.",
+    "expect": {"lines": [
+      {"item_id": "sesame-chicken", "size": "Large", "options": ["Fried rice"], "quantity": 1},
+      {"item_id": "egg-drop-soup", "size": "Pint", "options": [], "quantity": 1},
+      {"item_id": "egg-roll", "size": null, "options": [], "quantity": 3},
+      {"item_id": "soda", "size": null, "options": ["Sprite"], "quantity": 1}
+    ]}
+  },
+  {
+    "id": "mumbled-names",
+    "caller": "You speak quickly and a little unclearly: you ask for 'general sauce chicken, large' and 'two crab ragoons'. Name Vic, number 804 555 0116.",
+    "expect": {"lines": [
+      {"item_id": "general-tso", "size": "Large", "options": [], "quantity": 1},
+      {"item_id": "crab-rangoon", "size": null, "options": [], "quantity": 2}
+    ]}
+  },
+  {
+    "id": "wants-a-person",
+    "caller": "You are calling about a catering order for 60 people next week and want to talk to the owner.",
+    "expect": {"transfer": true}
+  },
+  {
+    "id": "upset-caller",
+    "caller": "You are upset because your last order was missing an item and you want to speak to a person right now.",
+    "expect": {"transfer": true}
+  }
+]

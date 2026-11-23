@@ -1,0 +1,93 @@
+{
+  "_note": "Rules the site importer applies to data/sources/tops-china-website.txt. Prices, sizes, hours and phone come from the page; this file adds naming, aliases, swaps and what to confirm. Edit, then: python -m scripts.import_site_menu --source data/sources/tops-china-website.txt --rules data/menus/tops-china.rules.json",
+  "restaurant": {
+    "id": "tops-china",
+    "name": "Top's China",
+    "timezone": "America/New_York",
+    "pickup_minutes": 15,
+    "payment_note": "Pay at pickup with cash or card.",
+    "confirm": "Tax is the 10% estimate from the website: read the real total tax % off a receipt. Hours copied from the website (closed Monday, 10:30 AM to 11 PM other days): confirm."
+  },
+
+  "category_name_suffix": {
+    "Combination Plates": " Combo",
+    "All Day Special": " Special"
+  },
+  "category_alias_suffixes": {
+    "Combination Plates": ["combination plate", "combination", "combo plate", "dinner combo"],
+    "All Day Special": ["all day special", "lunch special", "daily special"]
+  },
+  "kitchen_name_suffix": {
+    "Combination Plates": " 套餐",
+    "All Day Special": " 特餐"
+  },
+
+  "category_option_groups": {
+    "Combination Plates": [
+      {"name": "Rice", "min": 0, "max": 1, "replaces": "Pork Fried Rice",
+       "options": [{"name": "White Rice"}, {"name": "Vegetable Fried Rice"}]},
+      {"name": "Roll", "min": 0, "max": 1, "replaces": "Pork Egg Roll",
+       "options": [{"name": "Shrimp Roll", "price_cents": 10}, {"name": "Vegetable Spring Roll"}, {"name": "No Roll"}]}
+    ],
+    "All Day Special": [
+      {"name": "Rice", "min": 0, "max": 1, "replaces": "Fried Rice",
+       "options": [{"name": "White Rice"}]}
+    ],
+    "Chicken": [{"name": "Rice", "min": 0, "max": 1, "replaces": "White Rice", "options": [{"name": "Fried Rice", "price_cents": 100}]}],
+    "Pork": [{"name": "Rice", "min": 0, "max": 1, "replaces": "White Rice", "options": [{"name": "Fried Rice", "price_cents": 100}]}],
+    "Beef": [{"name": "Rice", "min": 0, "max": 1, "replaces": "White Rice", "options": [{"name": "Fried Rice", "price_cents": 100}]}],
+    "Seafood": [{"name": "Rice", "min": 0, "max": 1, "replaces": "White Rice", "options": [{"name": "Fried Rice", "price_cents": 100}]}],
+    "Chef's Specialties": [{"name": "Rice", "min": 0, "max": 1, "replaces": "White Rice", "options": [{"name": "Fried Rice", "price_cents": 100}]}],
+    "House Specialties": [{"name": "Meal", "min": 0, "max": 1, "options": [{"name": "Make it a meal with a side", "price_cents": 300}]}]
+  },
+  "category_confirm": {
+    "Combination Plates": "Swap choices (white rice, shrimp roll +$0.10, spring roll) are GUESSES: confirm what swaps are allowed and the upcharges.",
+    "Chicken": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Pork": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Beef": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Seafood": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Chef's Specialties": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm."
+  },
+
+  "popular_items": ["general-tsos-chicken-combo", "chicken-with-broccoli", "shrimp-fried-rice", "house-special-lo-mein", "crab-rangoon", "sesame-chicken-combo"],
+
+  "spice_levels": ["Mild", "Medium", "Hot"],
+  "spice_option_exclude_categories": ["Soup"],
+
+  "category_rename": {},
+  "item_rename": {
+    "Chicken with Orange Flavor": "Orange Chicken",
+    "Pepper Steak with Onions": "Pepper Steak",
+    "Curry Beef with Onion": "Curry Beef with Onions",
+    "Curry Shrimp with Onion": "Curry Shrimp with Onions",
+    "Curry Chicken with Onion": "Curry Chicken with Onions"
+  },
+
+  "extra_aliases": {
+    "general-tsos-chicken": ["general chicken", "general tao chicken", "general gau chicken", "general sauce chicken", "general tso"],
+    "general-tsos-chicken-combo": ["general chicken combo", "general tso combo", "general tso's combination", "general chicken combination"],
+    "general-tsos-chicken-special": ["general chicken special", "general tso special"],
+    "crab-rangoon": ["crab ragoon", "cheese wontons", "crab wontons", "cream cheese wontons"],
+    "kung-pao-chicken": ["kung po chicken", "kung pow chicken", "gong bao chicken"],
+    "hot-and-sour-soup": ["hot sour soup", "hot n sour soup"],
+    "wonton-soup": ["won ton soup"],
+    "pepper-steak": ["pepper steak with onions", "green pepper steak"],
+    "boneless-spare-ribs": ["boneless ribs"],
+    "bbq-spare-ribs": ["spare ribs", "ribs with bone"],
+    "orange-chicken": ["orange flavor chicken", "orange flavored chicken"],
+    "roast-pork-yat-gaw-mein": ["yat gaw mein", "yakamein", "yock"],
+    "egg-drop-with-wonton-soup": ["egg drop wonton soup", "wonton egg drop soup"],
+    "pork-egg-roll": ["egg roll", "egg rolls"],
+    "chicken-with-cashew-nuts": ["cashew chicken", "cashew nut chicken"],
+    "fried-shrimp": ["fried shrimps", "fried jumbo shrimp", "21 shrimp"],
+    "steamed-rice": ["white rice", "plain rice"],
+    "homemade-sweet-tea": ["sweet tea", "iced tea"],
+    "moo-goo-gai-pan": ["moo goo", "mushroom chicken"],
+    "hawaiian-five-o": ["hawaiian five", "hawaii five o"],
+    "dragon-and-phoenix": ["dragon phoenix"],
+    "fried-chicken-wings": ["chicken wings", "wings"],
+    "sweet-and-sour-chicken": ["sweet sour chicken"],
+    "chicken-chow-mei-fun": ["chicken mei fun"],
+    "singapore-chow-mei-fun": ["singapore noodles", "singapore mei fun"]
+  }
+}

@@ -1,0 +1,6842 @@
+{
+  "restaurant": {
+    "id": "tops-china",
+    "name": "Top's China",
+    "timezone": "America/New_York",
+    "pickup_minutes": 15,
+    "payment_note": "Pay at pickup with cash or card.",
+    "confirm": "Tax is the 10% estimate from the website: read the real total tax % off a receipt. Hours copied from the website (closed Monday, 10:30 AM to 11 PM other days): confirm.",
+    "phone": "+18045200380",
+    "tax_rate": 0.1,
+    "hours": {
+      "mon": [],
+      "tue": [
+        [
+          "10:30",
+          "23:00"
+        ]
+      ],
+      "wed": [
+        [
+          "10:30",
+          "23:00"
+        ]
+      ],
+      "thu": [
+        [
+          "10:30",
+          "23:00"
+        ]
+      ],
+      "fri": [
+        [
+          "10:30",
+          "23:00"
+        ]
+      ],
+      "sat": [
+        [
+          "10:30",
+          "23:00"
+        ]
+      ],
+      "sun": [
+        [
+          "10:30",
+          "23:00"
+        ]
+      ]
+    },
+    "address": "20849 Woodpecker Rd, Petersburg, VA 23803"
+  },
+  "category_notes": {
+    "Soup": "Served with crispy noodles",
+    "Lo Mein": "Soft noodles",
+    "Chow Mei Fun": "Thin rice noodles",
+    "Chicken": "Served with white rice",
+    "Pork": "Served with white rice",
+    "Beef": "Served with white rice",
+    "Seafood": "Served with white rice",
+    "Vegetables": "Served with white rice",
+    "Sweet and Sour": "Served with white rice",
+    "Egg Foo Young": "Served with white rice",
+    "Chop Suey": "Served with white rice",
+    "Chow Mein": "Served with rice and crispy noodles",
+    "Moo Shu": "Served with 4 pancakes",
+    "Chef's Specialties": "Served with white rice",
+    "House Specialties": "Order plain, or make it a meal with a side",
+    "Combination Plates": "Every plate $10.25, with pork fried rice and a pork egg roll",
+    "All Day Special": "Every plate $8.25, with fried rice"
+  },
+  "category_confirm": {
+    "Combination Plates": "Swap choices (white rice, shrimp roll +$0.10, spring roll) are GUESSES: confirm what swaps are allowed and the upcharges.",
+    "Chicken": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Pork": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Beef": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Seafood": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm.",
+    "Chef's Specialties": "Fried rice instead of white rice for +$1.00 is a GUESS: confirm."
+  },
+  "items": [
+    {
+      "id": "fried-shrimp",
+      "name": "Fried Shrimp",
+      "category": "Appetizers",
+      "aliases": [
+        "Fried Shrimp (21 pcs)",
+        "fried shrimps",
+        "fried jumbo shrimp",
+        "21 shrimp"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "21 pieces. Golden, crispy fried shrimp served with tangy dipping sauce.",
+      "kitchen_name": "炸虾",
+      "price_cents": 799
+    },
+    {
+      "id": "pork-egg-roll",
+      "name": "Pork Egg Roll",
+      "category": "Appetizers",
+      "aliases": [
+        "Pork Egg Roll (1)",
+        "egg roll",
+        "egg rolls"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "1 pieces. A classic pork egg roll with a crispy shell and savory filling.",
+      "kitchen_name": "春卷",
+      "price_cents": 190
+    },
+    {
+      "id": "shrimp-roll",
+      "name": "Shrimp Roll",
+      "category": "Appetizers",
+      "aliases": [
+        "Shrimp Roll (1)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "1 pieces. A shrimp roll filled with tender shrimp and spices.",
+      "kitchen_name": "虾卷",
+      "price_cents": 199
+    },
+    {
+      "id": "vegetable-spring-roll",
+      "name": "Vegetable Spring Roll",
+      "category": "Appetizers",
+      "aliases": [
+        "Vegetable Spring Roll (2)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "2 pieces. Fresh, crisp spring rolls filled with assorted vegetables.",
+      "kitchen_name": "素春卷",
+      "price_cents": 350
+    },
+    {
+      "id": "fried-wonton",
+      "name": "Fried Wonton",
+      "category": "Appetizers",
+      "aliases": [
+        "Fried Wonton (10)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "10 pieces. Crunchy wontons filled with a savory pork and veggie mix.",
+      "kitchen_name": "炸云吞",
+      "price_cents": 625
+    },
+    {
+      "id": "boneless-spare-ribs",
+      "name": "Boneless Spare Ribs",
+      "category": "Appetizers",
+      "aliases": [
+        "boneless ribs"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "Juicy, marinated spare ribs without the bone.",
+      "kitchen_name": "无骨排骨",
+      "sizes": [
+        {
+          "name": "Small",
+          "price_cents": 675
+        },
+        {
+          "name": "Large",
+          "price_cents": 1495
+        }
+      ]
+    },
+    {
+      "id": "bbq-spare-ribs",
+      "name": "BBQ Spare Ribs",
+      "category": "Appetizers",
+      "aliases": [
+        "BBQ Spare Ribs (with bone)",
+        "spare ribs",
+        "ribs with bone"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "Succulent spare ribs cooked with a smoky glaze.",
+      "kitchen_name": "烧排骨",
+      "sizes": [
+        {
+          "name": "Small",
+          "price_cents": 850
+        },
+        {
+          "name": "Large",
+          "price_cents": 1499
+        }
+      ]
+    },
+    {
+      "id": "teriyaki-beef",
+      "name": "Teriyaki Beef",
+      "category": "Appetizers",
+      "aliases": [
+        "Teriyaki Beef (4)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "4 pieces. Beef skewers marinated in teriyaki sauce and grilled.",
+      "kitchen_name": "照烧牛串",
+      "price_cents": 825
+    },
+    {
+      "id": "teriyaki-chicken",
+      "name": "Teriyaki Chicken",
+      "category": "Appetizers",
+      "aliases": [
+        "Teriyaki Chicken (5)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "5 pieces. Grilled chicken skewers coated in a rich teriyaki glaze.",
+      "kitchen_name": "照烧鸡串",
+      "price_cents": 799
+    },
+    {
+      "id": "pu-pu-platter",
+      "name": "Pu Pu Platter",
+      "category": "Appetizers",
+      "aliases": [
+        "Pu Pu Platter (for 2)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "An assortment of popular appetizers for sharing.",
+      "kitchen_name": "宝宝盘",
+      "price_cents": 1499
+    },
+    {
+      "id": "crab-rangoon",
+      "name": "Crab Rangoon",
+      "category": "Appetizers",
+      "aliases": [
+        "Crab Rangoon (8)",
+        "crab ragoon",
+        "cheese wontons",
+        "crab wontons",
+        "cream cheese wontons"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "includes": [],
+      "description": "8 pieces. Crispy wontons stuffed with creamy crab and cheese filling.",
+      "kitchen_name": "蟹角",
+      "price_cents": 575
+    },
+    {
+      "id": "fried-donuts",
+      "name": "Fried Donuts",
+      "category": "Appetizers",
+      "aliases": [
+        "Fried Donuts (10)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "10 pieces. Golden, sweet donuts dusted with sugar.",
+      "kitchen_name": "炸甜圈",
+      "price_cents": 575
+    },
+    {
+      "id": "french-fries",
+      "name": "French Fries",
+      "category": "Appetizers",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Classic french fries, crispy and golden brown.",
+      "kitchen_name": "薯条",
+      "sizes": [
+        {
+          "name": "Small",
+          "price_cents": 325
+        },
+        {
+          "name": "Large",
+          "price_cents": 425
+        }
+      ]
+    },
+    {
+      "id": "steamed-dumplings",
+      "name": "Steamed Dumplings",
+      "category": "Appetizers",
+      "aliases": [
+        "Steamed Dumplings (8)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "8 pieces. Tender steamed dumplings filled with savory pork.",
+      "kitchen_name": "蒸饺",
+      "price_cents": 799
+    },
+    {
+      "id": "fried-dumplings",
+      "name": "Fried Dumplings",
+      "category": "Appetizers",
+      "aliases": [
+        "Fried Dumplings (8)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "8 pieces. Crispy fried dumplings filled with savory pork.",
+      "kitchen_name": "锅贴",
+      "price_cents": 799
+    },
+    {
+      "id": "hot-and-sour-soup",
+      "name": "Hot and Sour Soup",
+      "category": "Soup",
+      "aliases": [
+        "hot sour soup",
+        "hot n sour soup"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "A spicy and tangy soup with tofu, mushrooms, and vegetables.",
+      "kitchen_name": "酸辣汤",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 399
+        },
+        {
+          "name": "Quart",
+          "price_cents": 550
+        }
+      ]
+    },
+    {
+      "id": "wonton-soup",
+      "name": "Wonton Soup",
+      "category": "Soup",
+      "aliases": [
+        "won ton soup"
+      ],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "A light broth with tender pork wontons and green onions.",
+      "kitchen_name": "云吞汤",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 325
+        },
+        {
+          "name": "Quart",
+          "price_cents": 550
+        }
+      ]
+    },
+    {
+      "id": "egg-drop-soup",
+      "name": "Egg Drop Soup",
+      "category": "Soup",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "Silky egg ribbons in a savory chicken broth.",
+      "kitchen_name": "蛋花汤",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 295
+        },
+        {
+          "name": "Quart",
+          "price_cents": 550
+        }
+      ]
+    },
+    {
+      "id": "egg-drop-with-wonton-soup",
+      "name": "Egg Drop with Wonton Soup",
+      "category": "Soup",
+      "aliases": [
+        "egg drop wonton soup",
+        "wonton egg drop soup"
+      ],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "Egg drop soup with pork wontons.",
+      "kitchen_name": "蛋花云吞汤",
+      "price_cents": 550
+    },
+    {
+      "id": "chicken-noodle-soup",
+      "name": "Chicken Noodle Soup",
+      "category": "Soup",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "Chicken broth with noodles and tender chicken.",
+      "kitchen_name": "鸡面汤",
+      "price_cents": 550
+    },
+    {
+      "id": "chicken-rice-soup",
+      "name": "Chicken Rice Soup",
+      "category": "Soup",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "Chicken broth with rice and tender chicken.",
+      "kitchen_name": "鸡饭汤",
+      "price_cents": 550
+    },
+    {
+      "id": "house-special-soup",
+      "name": "House Special Soup",
+      "category": "Soup",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "A rich soup with shrimp, chicken, pork, and fresh vegetables.",
+      "kitchen_name": "本楼汤",
+      "price_cents": 750
+    },
+    {
+      "id": "roast-pork-yat-gaw-mein",
+      "name": "Roast Pork Yat Gaw Mein",
+      "category": "Soup",
+      "aliases": [
+        "yat gaw mein",
+        "yakamein",
+        "yock"
+      ],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "Noodles in savory broth with roast pork and green onions.",
+      "kitchen_name": "叉烧一个面",
+      "price_cents": 699
+    },
+    {
+      "id": "mixed-vegetable-soup",
+      "name": "Mixed Vegetable Soup",
+      "category": "Soup",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Crispy Noodles"
+      ],
+      "description": "A blend of vegetables in a light broth.",
+      "kitchen_name": "什菜汤",
+      "price_cents": 575
+    },
+    {
+      "id": "vegetable-fried-rice",
+      "name": "Vegetable Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Fried rice with mixed vegetables.",
+      "kitchen_name": "菜炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 600
+        },
+        {
+          "name": "Quart",
+          "price_cents": 795
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-fried-rice",
+      "name": "Roast Pork Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Fried rice with roast pork.",
+      "kitchen_name": "叉烧炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 675
+        },
+        {
+          "name": "Quart",
+          "price_cents": 895
+        }
+      ]
+    },
+    {
+      "id": "chicken-fried-rice",
+      "name": "Chicken Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Fried rice with chicken.",
+      "kitchen_name": "鸡炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 675
+        },
+        {
+          "name": "Quart",
+          "price_cents": 895
+        }
+      ]
+    },
+    {
+      "id": "beef-fried-rice",
+      "name": "Beef Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Fried rice with beef.",
+      "kitchen_name": "牛炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 699
+        },
+        {
+          "name": "Quart",
+          "price_cents": 995
+        }
+      ]
+    },
+    {
+      "id": "shrimp-fried-rice",
+      "name": "Shrimp Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [
+        "popular"
+      ],
+      "includes": [],
+      "description": "Fried rice with shrimp.",
+      "kitchen_name": "虾炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 699
+        },
+        {
+          "name": "Quart",
+          "price_cents": 995
+        }
+      ]
+    },
+    {
+      "id": "house-special-fried-rice",
+      "name": "House Special Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "A mix of meats and vegetables in fried rice.",
+      "kitchen_name": "本楼炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 725
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "crab-meat-fried-rice",
+      "name": "Crab Meat Fried Rice",
+      "category": "Fried Rice",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Fried rice with crab meat.",
+      "kitchen_name": "蟹肉炒饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 795
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "vegetable-lo-mein",
+      "name": "Vegetable Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Soft noodles with fresh vegetables.",
+      "kitchen_name": "菜捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 600
+        },
+        {
+          "name": "Quart",
+          "price_cents": 799
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-lo-mein",
+      "name": "Roast Pork Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Soft noodles with roast pork.",
+      "kitchen_name": "叉烧捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 675
+        },
+        {
+          "name": "Quart",
+          "price_cents": 899
+        }
+      ]
+    },
+    {
+      "id": "chicken-lo-mein",
+      "name": "Chicken Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Soft noodles with chicken.",
+      "kitchen_name": "鸡捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 675
+        },
+        {
+          "name": "Quart",
+          "price_cents": 899
+        }
+      ]
+    },
+    {
+      "id": "beef-lo-mein",
+      "name": "Beef Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Soft noodles with beef.",
+      "kitchen_name": "牛捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 699
+        },
+        {
+          "name": "Quart",
+          "price_cents": 995
+        }
+      ]
+    },
+    {
+      "id": "shrimp-lo-mein",
+      "name": "Shrimp Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Soft noodles with shrimp.",
+      "kitchen_name": "虾捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 699
+        },
+        {
+          "name": "Quart",
+          "price_cents": 995
+        }
+      ]
+    },
+    {
+      "id": "house-special-lo-mein",
+      "name": "House Special Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [
+        "popular"
+      ],
+      "includes": [],
+      "description": "Lo mein with a variety of meats and vegetables.",
+      "kitchen_name": "本楼捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 725
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1025
+        }
+      ]
+    },
+    {
+      "id": "crab-meat-lo-mein",
+      "name": "Crab Meat Lo Mein",
+      "category": "Lo Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Soft noodles stir-fried with crab meat and vegetables.",
+      "kitchen_name": "蟹肉捞面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 725
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1025
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-chow-mei-fun",
+      "name": "Roast Pork Chow Mei Fun",
+      "category": "Chow Mei Fun",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Stir-fried thin rice noodles with roast pork and vegetables.",
+      "price_cents": 1025
+    },
+    {
+      "id": "chicken-chow-mei-fun",
+      "name": "Chicken Chow Mei Fun",
+      "category": "Chow Mei Fun",
+      "aliases": [
+        "chicken mei fun"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "Stir-fried thin rice noodles with chicken and vegetables.",
+      "price_cents": 1025
+    },
+    {
+      "id": "beef-chow-mei-fun",
+      "name": "Beef Chow Mei Fun",
+      "category": "Chow Mei Fun",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Stir-fried thin rice noodles with beef and vegetables.",
+      "price_cents": 1150
+    },
+    {
+      "id": "shrimp-chow-mei-fun",
+      "name": "Shrimp Chow Mei Fun",
+      "category": "Chow Mei Fun",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Stir-fried thin rice noodles with shrimp and vegetables.",
+      "price_cents": 1150
+    },
+    {
+      "id": "house-special-chow-mei-fun",
+      "name": "House Special Chow Mei Fun",
+      "category": "Chow Mei Fun",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "A mix of meats and vegetables with thin rice noodles.",
+      "price_cents": 1150
+    },
+    {
+      "id": "singapore-chow-mei-fun",
+      "name": "Singapore Chow Mei Fun",
+      "category": "Chow Mei Fun",
+      "aliases": [
+        "singapore noodles",
+        "singapore mei fun"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [],
+      "description": "Spicy rice noodles with curry, shrimp, and roast pork.",
+      "kitchen_name": "星洲炒米",
+      "price_cents": 1150,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moo-goo-gai-pan",
+      "name": "Moo Goo Gai Pan",
+      "category": "Chicken",
+      "aliases": [
+        "moo goo",
+        "mushroom chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken with mushrooms and vegetables in a light sauce.",
+      "kitchen_name": "蘑菇鸡片",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-cashew-nuts",
+      "name": "Chicken with Cashew Nuts",
+      "category": "Chicken",
+      "aliases": [
+        "Cashew Nuts Chicken",
+        "cashew chicken",
+        "cashew nut chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken stir-fried with cashews and vegetables.",
+      "kitchen_name": "腰果鸡",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-broccoli",
+      "name": "Chicken with Broccoli",
+      "category": "Chicken",
+      "aliases": [
+        "Broccoli Chicken"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken and broccoli stir-fried in a savory sauce.",
+      "kitchen_name": "芥兰鸡",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-oyster-sauce",
+      "name": "Chicken with Oyster Sauce",
+      "category": "Chicken",
+      "aliases": [
+        "Oyster Sauce Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken stir-fried in a rich oyster sauce with vegetables.",
+      "kitchen_name": "蚝油鸡",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-snow-peas",
+      "name": "Chicken with Snow Peas",
+      "category": "Chicken",
+      "aliases": [
+        "Snow Peas Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken and snow peas in a delicate sauce.",
+      "kitchen_name": "雪豆鸡",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-black-bean-sauce",
+      "name": "Chicken with Black Bean Sauce",
+      "category": "Chicken",
+      "aliases": [
+        "Black Bean Sauce Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken in a black bean sauce with vegetables.",
+      "kitchen_name": "豉汁鸡",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kung-pao-chicken",
+      "name": "Kung Pao Chicken",
+      "category": "Chicken",
+      "aliases": [
+        "kung po chicken",
+        "kung pow chicken",
+        "gong bao chicken"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy chicken with peanuts and vegetables.",
+      "kitchen_name": "宫保鸡丁",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-chicken-with-onions",
+      "name": "Curry Chicken with Onions",
+      "category": "Chicken",
+      "aliases": [
+        "Curry Chicken with Onion"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken cooked in curry sauce with onions.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-garlic-sauce",
+      "name": "Chicken with Garlic Sauce",
+      "category": "Chicken",
+      "aliases": [
+        "Garlic Sauce Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken in a rich garlic sauce with vegetables.",
+      "kitchen_name": "鱼香鸡",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-mixed-vegetables",
+      "name": "Roast Pork with Mixed Vegetables",
+      "category": "Pork",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork with mixed vegetables.",
+      "kitchen_name": "什菜叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-mushroom",
+      "name": "Roast Pork with Mushroom",
+      "category": "Pork",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork with mushrooms.",
+      "kitchen_name": "冬菇叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-snow-peas",
+      "name": "Roast Pork with Snow Peas",
+      "category": "Pork",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork stir-fried with snow peas.",
+      "kitchen_name": "雪豆叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-pepper-and-tomato",
+      "name": "Roast Pork with Pepper and Tomato",
+      "category": "Pork",
+      "aliases": [
+        "Roast Pork with Pepper & Tomato"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork with bell peppers and tomatoes in a savory sauce.",
+      "kitchen_name": "番茄青椒叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-bean-curd",
+      "name": "Roast Pork with Bean Curd",
+      "category": "Pork",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork stir-fried with soft bean curd (tofu).",
+      "kitchen_name": "豆腐叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-cashew-nuts",
+      "name": "Roast Pork with Cashew Nuts",
+      "category": "Pork",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork with crunchy cashews.",
+      "kitchen_name": "腰果叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-broccoli",
+      "name": "Roast Pork with Broccoli",
+      "category": "Pork",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork with broccoli.",
+      "kitchen_name": "芥兰叉烧",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pork-with-scallions",
+      "name": "Pork with Scallions",
+      "category": "Pork",
+      "aliases": [
+        "Scallions Pork"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Pork stir-fried with scallions.",
+      "kitchen_name": "葱爆肉",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pepper-steak",
+      "name": "Pepper Steak",
+      "category": "Beef",
+      "aliases": [
+        "Pepper Steak with Onions",
+        "pepper steak with onions",
+        "green pepper steak"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Pepper steak cooked with onions.",
+      "kitchen_name": "青椒牛",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-mixed-vegetables",
+      "name": "Beef with Mixed Vegetables",
+      "category": "Beef",
+      "aliases": [
+        "Mixed Vegetables Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Beef cooked with a variety of vegetables.",
+      "kitchen_name": "什菜牛",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-snow-peas",
+      "name": "Beef with Snow Peas",
+      "category": "Beef",
+      "aliases": [
+        "Snow Peas Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Beef stir-fried with snow peas.",
+      "kitchen_name": "雪豆牛",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-broccoli",
+      "name": "Beef with Broccoli",
+      "category": "Beef",
+      "aliases": [
+        "Broccoli Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Classic beef and broccoli in a savory sauce.",
+      "kitchen_name": "芥兰牛",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-beef-with-onions",
+      "name": "Curry Beef with Onions",
+      "category": "Beef",
+      "aliases": [
+        "Curry Beef with Onion"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Beef with onion in a curry sauce.",
+      "kitchen_name": "咖喱牛",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mongolian-beef",
+      "name": "Mongolian Beef",
+      "category": "Beef",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Mongolian-style beef stir-fry.",
+      "kitchen_name": "蒙古牛",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-lobster-sauce",
+      "name": "Shrimp with Lobster Sauce",
+      "category": "Seafood",
+      "aliases": [
+        "Lobster Sauce Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp in a rich lobster sauce.",
+      "kitchen_name": "虾龙糊",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-mushroom",
+      "name": "Shrimp with Mushroom",
+      "category": "Seafood",
+      "aliases": [
+        "Mushroom Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp and mushrooms stir-fried together.",
+      "kitchen_name": "冬菇虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-mixed-vegetables",
+      "name": "Shrimp with Mixed Vegetables",
+      "category": "Seafood",
+      "aliases": [
+        "Mixed Vegetables Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp cooked with a variety of vegetables.",
+      "kitchen_name": "什菜虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-cashew-nuts",
+      "name": "Shrimp with Cashew Nuts",
+      "category": "Seafood",
+      "aliases": [
+        "Cashew Nuts Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp stir-fried with crunchy cashews.",
+      "kitchen_name": "腰果虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-broccoli",
+      "name": "Shrimp with Broccoli",
+      "category": "Seafood",
+      "aliases": [
+        "Broccoli Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp stir-fried with broccoli.",
+      "kitchen_name": "芥兰虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-snow-peas",
+      "name": "Shrimp with Snow Peas",
+      "category": "Seafood",
+      "aliases": [
+        "Snow Peas Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp and crisp snow peas in a savory sauce.",
+      "kitchen_name": "雪豆虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-black-bean-sauce",
+      "name": "Shrimp with Black Bean Sauce",
+      "category": "Seafood",
+      "aliases": [
+        "Black Bean Sauce Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp in a black bean sauce.",
+      "kitchen_name": "豉汁虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-chili-sauce",
+      "name": "Shrimp with Chili Sauce",
+      "category": "Seafood",
+      "aliases": [
+        "Chili Sauce Shrimp"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp cooked in a spicy chili sauce.",
+      "kitchen_name": "辣酱虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kung-pao-shrimp",
+      "name": "Kung Pao Shrimp",
+      "category": "Seafood",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp with peanuts and vegetables in a spicy sauce.",
+      "kitchen_name": "宫保虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-garlic-sauce",
+      "name": "Shrimp with Garlic Sauce",
+      "category": "Seafood",
+      "aliases": [
+        "Garlic Sauce Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp in a savory garlic sauce.",
+      "kitchen_name": "鱼香虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-shrimp-with-onions",
+      "name": "Curry Shrimp with Onions",
+      "category": "Seafood",
+      "aliases": [
+        "Curry Shrimp with Onion"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp and onions in a curry sauce.",
+      "kitchen_name": "咖喱虾",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1299
+        }
+      ],
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saut-ed-broccoli-with-garlic-sauce",
+      "name": "Sautéed Broccoli with Garlic Sauce",
+      "category": "Vegetables",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Broccoli sautéed in a savory garlic sauce.",
+      "price_cents": 1099
+    },
+    {
+      "id": "mixed-vegetables",
+      "name": "Mixed Vegetables",
+      "category": "Vegetables",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Mixed vegetables stir-fried together.",
+      "kitchen_name": "什菜",
+      "price_cents": 1099
+    },
+    {
+      "id": "bean-curd-szechuan-style",
+      "name": "Bean Curd Szechuan Style",
+      "category": "Vegetables",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy Szechuan-style bean curd (tofu) with vegetables.",
+      "kitchen_name": "四川豆腐",
+      "price_cents": 1099,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bean-curd-home-style",
+      "name": "Bean Curd Home Style",
+      "category": "Vegetables",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Home-style bean curd (tofu) with vegetables.",
+      "kitchen_name": "家常豆腐",
+      "price_cents": 1099
+    },
+    {
+      "id": "sweet-and-sour-chicken",
+      "name": "Sweet and Sour Chicken",
+      "category": "Sweet and Sour",
+      "aliases": [
+        "sweet sour chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Crispy chicken in a tangy sweet and sour sauce.",
+      "kitchen_name": "甜酸鸡",
+      "price_cents": 1299
+    },
+    {
+      "id": "sweet-and-sour-pork",
+      "name": "Sweet and Sour Pork",
+      "category": "Sweet and Sour",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Crispy pork in a tangy sweet and sour sauce.",
+      "kitchen_name": "甜酸肉",
+      "price_cents": 1299
+    },
+    {
+      "id": "sweet-and-sour-shrimp",
+      "name": "Sweet and Sour Shrimp",
+      "category": "Sweet and Sour",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp in a tangy sweet and sour sauce.",
+      "kitchen_name": "甜酸虾",
+      "price_cents": 1399
+    },
+    {
+      "id": "sweet-and-sour-triple",
+      "name": "Sweet and Sour Triple",
+      "category": "Sweet and Sour",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Pork, chicken, and shrimp in sweet and sour sauce.",
+      "kitchen_name": "甜酸三拼",
+      "price_cents": 1399
+    },
+    {
+      "id": "chicken-egg-foo-young",
+      "name": "Chicken Egg Foo Young",
+      "category": "Egg Foo Young",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Fluffy egg patties filled with chicken.",
+      "kitchen_name": "鸡芙蓉蛋",
+      "price_cents": 995
+    },
+    {
+      "id": "roast-pork-egg-foo-young",
+      "name": "Roast Pork Egg Foo Young",
+      "category": "Egg Foo Young",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Egg patties filled with roast pork.",
+      "kitchen_name": "叉烧芙蓉蛋",
+      "price_cents": 995
+    },
+    {
+      "id": "beef-egg-foo-young",
+      "name": "Beef Egg Foo Young",
+      "category": "Egg Foo Young",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Fluffy egg patties filled with beef.",
+      "kitchen_name": "牛芙蓉蛋",
+      "price_cents": 1099
+    },
+    {
+      "id": "shrimp-egg-foo-young",
+      "name": "Shrimp Egg Foo Young",
+      "category": "Egg Foo Young",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Egg patties filled with shrimp.",
+      "kitchen_name": "虾芙蓉蛋",
+      "price_cents": 1099
+    },
+    {
+      "id": "crab-meat-egg-foo-young",
+      "name": "Crab Meat Egg Foo Young",
+      "category": "Egg Foo Young",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Egg patties filled with crab meat.",
+      "kitchen_name": "蟹肉芙蓉蛋",
+      "price_cents": 1199
+    },
+    {
+      "id": "house-special-egg-foo-young",
+      "name": "House Special Egg Foo Young",
+      "category": "Egg Foo Young",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "A blend of meats and vegetables in fluffy egg patties.",
+      "kitchen_name": "本楼芙蓉蛋",
+      "price_cents": 1199
+    },
+    {
+      "id": "vegetable-chop-suey",
+      "name": "Vegetable Chop Suey",
+      "category": "Chop Suey",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Mixed vegetables in a savory sauce.",
+      "kitchen_name": "菜杂碎",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 650
+        },
+        {
+          "name": "Quart",
+          "price_cents": 750
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-chop-suey",
+      "name": "Roast Pork Chop Suey",
+      "category": "Chop Suey",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Roast pork and vegetables in a hearty sauce.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 699
+        },
+        {
+          "name": "Quart",
+          "price_cents": 975
+        }
+      ]
+    },
+    {
+      "id": "chicken-chop-suey",
+      "name": "Chicken Chop Suey",
+      "category": "Chop Suey",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken and vegetables in a hearty sauce.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 699
+        },
+        {
+          "name": "Quart",
+          "price_cents": 975
+        }
+      ]
+    },
+    {
+      "id": "beef-chop-suey",
+      "name": "Beef Chop Suey",
+      "category": "Chop Suey",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Beef cooked with vegetables in a savory sauce.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 799
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "shrimp-chop-suey",
+      "name": "Shrimp Chop Suey",
+      "category": "Chop Suey",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Shrimp cooked with vegetables in a savory sauce.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 799
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "house-special-chop-suey",
+      "name": "House Special Chop Suey",
+      "category": "Chop Suey",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "A blend of meats and vegetables in a savory sauce.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 825
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "vegetable-chow-mein",
+      "name": "Vegetable Chow Mein",
+      "category": "Chow Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Rice",
+        "Crispy Noodles"
+      ],
+      "description": "Chow mein with fresh vegetables.",
+      "kitchen_name": "菜炒面",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 600
+        },
+        {
+          "name": "Quart",
+          "price_cents": 850
+        }
+      ]
+    },
+    {
+      "id": "chicken-chow-mein",
+      "name": "Chicken Chow Mein",
+      "category": "Chow Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Rice",
+        "Crispy Noodles"
+      ],
+      "description": "Chow mein with tender chicken.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 650
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-chow-mein",
+      "name": "Roast Pork Chow Mein",
+      "category": "Chow Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Rice",
+        "Crispy Noodles"
+      ],
+      "description": "Chow mein with roast pork.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 650
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1050
+        }
+      ]
+    },
+    {
+      "id": "beef-chow-mein",
+      "name": "Beef Chow Mein",
+      "category": "Chow Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Rice",
+        "Crispy Noodles"
+      ],
+      "description": "Chow mein with beef.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 725
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1099
+        }
+      ]
+    },
+    {
+      "id": "shrimp-chow-mein",
+      "name": "Shrimp Chow Mein",
+      "category": "Chow Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Rice",
+        "Crispy Noodles"
+      ],
+      "description": "Chow mein with shrimp.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 725
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1099
+        }
+      ]
+    },
+    {
+      "id": "house-special-chow-mein",
+      "name": "House Special Chow Mein",
+      "category": "Chow Mein",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "Rice",
+        "Crispy Noodles"
+      ],
+      "description": "Chow mein with a blend of meats and vegetables.",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 799
+        },
+        {
+          "name": "Quart",
+          "price_cents": 1099
+        }
+      ]
+    },
+    {
+      "id": "moo-shu-vegetables",
+      "name": "Moo Shu Vegetables",
+      "category": "Moo Shu",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "4 Pancakes"
+      ],
+      "description": "Stir-fried vegetables to wrap in thin pancakes.",
+      "kitchen_name": "木须菜",
+      "price_cents": 1199
+    },
+    {
+      "id": "moo-shu-chicken",
+      "name": "Moo Shu Chicken",
+      "category": "Moo Shu",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "4 Pancakes"
+      ],
+      "description": "Chicken stir-fried with vegetables.",
+      "price_cents": 1299
+    },
+    {
+      "id": "moo-shu-pork",
+      "name": "Moo Shu Pork",
+      "category": "Moo Shu",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "4 Pancakes"
+      ],
+      "description": "Pork stir-fried with vegetables.",
+      "price_cents": 1299
+    },
+    {
+      "id": "moo-shu-shrimp",
+      "name": "Moo Shu Shrimp",
+      "category": "Moo Shu",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "4 Pancakes"
+      ],
+      "description": "Shrimp stir-fried with vegetables.",
+      "price_cents": 1399
+    },
+    {
+      "id": "moo-shu-beef",
+      "name": "Moo Shu Beef",
+      "category": "Moo Shu",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "4 Pancakes"
+      ],
+      "description": "Beef stir-fried with vegetables.",
+      "price_cents": 1399
+    },
+    {
+      "id": "general-tsos-chicken",
+      "name": "General Tso's Chicken",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "general chicken",
+        "general tao chicken",
+        "general gau chicken",
+        "general sauce chicken",
+        "general tso"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Sweet and spicy chicken with a crispy coating.",
+      "kitchen_name": "左宗鸡",
+      "price_cents": 1250,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sesame-chicken",
+      "name": "Sesame Chicken",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Sweet and savory chicken topped with sesame seeds.",
+      "kitchen_name": "芝麻鸡",
+      "price_cents": 1250,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orange-chicken",
+      "name": "Orange Chicken",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "Chicken with Orange Flavor",
+        "orange flavor chicken",
+        "orange flavored chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Orange-flavored chicken with a tangy sauce.",
+      "kitchen_name": "陈皮鸡",
+      "price_cents": 1250,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bourbon-chicken",
+      "name": "Bourbon Chicken",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken in a sweet bourbon sauce.",
+      "kitchen_name": "波本鸡",
+      "price_cents": 1250,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunan-chicken",
+      "name": "Hunan Chicken",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy Hunan-style chicken with vegetables.",
+      "kitchen_name": "湖南鸡",
+      "price_cents": 1250,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-szechuan-style",
+      "name": "Chicken Szechuan Style",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy Szechuan-style chicken with vegetables.",
+      "kitchen_name": "四川鸡",
+      "price_cents": 1250,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "happy-family",
+      "name": "Happy Family",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "A mix of meats and vegetables.",
+      "kitchen_name": "全家福",
+      "price_cents": 1595,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seafood-delight",
+      "name": "Seafood Delight",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "An assortment of seafood cooked with vegetables.",
+      "kitchen_name": "海鲜大会",
+      "price_cents": 1595,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-and-shrimp-hunan-style",
+      "name": "Beef and Shrimp Hunan Style",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "Beef & Shrimp Hunan Style"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy beef and shrimp cooked Hunan style with vegetables.",
+      "price_cents": 1595,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scallops-and-shrimp-with-garlic-sauce",
+      "name": "Scallops and Shrimp with Garlic Sauce",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "Scallops & Shrimp with Garlic Sauce"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Scallops and shrimp in a rich garlic sauce.",
+      "kitchen_name": "鱼香虾带子",
+      "price_cents": 1595,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subgum-wonton",
+      "name": "Subgum Wonton",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Meat, vegetables, and crispy wontons.",
+      "kitchen_name": "什锦云吞",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steak-kew",
+      "name": "Steak Kew",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Tender steak cubes with vegetables in a savory sauce.",
+      "kitchen_name": "牛柳",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-seasons",
+      "name": "Four Seasons",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Four kinds of meat with vegetables.",
+      "kitchen_name": "四季",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "harvest-chicken-and-shrimp",
+      "name": "Harvest Chicken and Shrimp",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "Harvest Chicken & Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken and shrimp stir-fried with vegetables in a light sauce.",
+      "kitchen_name": "丰收鸡虾",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sesame-beef",
+      "name": "Sesame Beef",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Sweet and savory beef topped with sesame seeds.",
+      "kitchen_name": "芝麻牛",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "triple-delight",
+      "name": "Triple Delight",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Chicken, beef, and shrimp with vegetables.",
+      "kitchen_name": "三鲜",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shredded-beef-with-garlic-sauce",
+      "name": "Shredded Beef with Garlic Sauce",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Tender shredded beef in a rich garlic sauce.",
+      "kitchen_name": "鱼香牛",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunan-beef",
+      "name": "Hunan Beef",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy Hunan-style beef with vegetables.",
+      "kitchen_name": "湖南牛",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-szechuan-style",
+      "name": "Beef Szechuan Style",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy Szechuan-style beef with vegetables.",
+      "kitchen_name": "四川牛",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-szechuan-style",
+      "name": "Shrimp Szechuan Style",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Spicy Szechuan-style shrimp with vegetables.",
+      "kitchen_name": "四川虾",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orange-beef",
+      "name": "Orange Beef",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Beef in a tangy orange-flavored sauce.",
+      "kitchen_name": "陈皮牛",
+      "price_cents": 1495,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "butterfly-shrimp",
+      "name": "Butterfly Shrimp",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Golden fried butterfly shrimp.",
+      "kitchen_name": "蝴蝶虾",
+      "price_cents": 1395,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hawaiian-five-o",
+      "name": "Hawaiian Five \"O\"",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "hawaiian five",
+        "hawaii five o"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "A tropical mix of meats and fruit.",
+      "kitchen_name": "夏威夷五",
+      "price_cents": 1395,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon-and-phoenix",
+      "name": "Dragon and Phoenix",
+      "category": "Chef's Specialties",
+      "aliases": [
+        "Dragon & Phoenix",
+        "dragon phoenix"
+      ],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Seafood and chicken in a special sauce.",
+      "kitchen_name": "龙凤配",
+      "price_cents": 1395,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crispy-shrimp",
+      "name": "Crispy Shrimp",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Crispy fried shrimp with a tangy dipping sauce.",
+      "kitchen_name": "脆皮虾",
+      "price_cents": 1395,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general-shrimp",
+      "name": "General Shrimp",
+      "category": "Chef's Specialties",
+      "aliases": [],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "White Rice"
+      ],
+      "description": "Sweet and spicy shrimp with a crispy coating.",
+      "kitchen_name": "左宗虾",
+      "price_cents": 1395,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "White Rice",
+          "options": [
+            {
+              "name": "Fried Rice",
+              "price_cents": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-chicken-wings",
+      "name": "Fried Chicken Wings",
+      "category": "House Specialties",
+      "aliases": [
+        "Fried Chicken Wings (4)",
+        "chicken wings",
+        "wings"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "4 pieces",
+      "kitchen_name": "炸鸡翅",
+      "price_cents": 799,
+      "confirm": "Site says 'From' this price: confirm the plain price and the make-it-a-meal upcharge.",
+      "option_groups": [
+        {
+          "name": "Meal",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Make it a meal with a side",
+              "price_cents": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honey-wings",
+      "name": "Honey Wings",
+      "category": "House Specialties",
+      "aliases": [
+        "Honey Wings (4)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "4 pieces",
+      "kitchen_name": "蜜汁鸡翅",
+      "price_cents": 825,
+      "confirm": "Site says 'From' this price: confirm the plain price and the make-it-a-meal upcharge.",
+      "option_groups": [
+        {
+          "name": "Meal",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Make it a meal with a side",
+              "price_cents": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-chicken-wings-with-garlic-sauce",
+      "name": "Fried Chicken Wings with Garlic Sauce",
+      "category": "House Specialties",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "kitchen_name": "鱼香鸡翅",
+      "price_cents": 825,
+      "confirm": "Site says 'From' this price: confirm the plain price and the make-it-a-meal upcharge.",
+      "option_groups": [
+        {
+          "name": "Meal",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Make it a meal with a side",
+              "price_cents": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-crab-sticks",
+      "name": "Fried Crab Sticks",
+      "category": "House Specialties",
+      "aliases": [
+        "Fried Crab Sticks (5)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "5 pieces",
+      "kitchen_name": "炸蟹柳",
+      "price_cents": 750,
+      "confirm": "Site says 'From' this price: confirm the plain price and the make-it-a-meal upcharge.",
+      "option_groups": [
+        {
+          "name": "Meal",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Make it a meal with a side",
+              "price_cents": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-scallops",
+      "name": "Fried Scallops",
+      "category": "House Specialties",
+      "aliases": [
+        "Fried Scallops (10)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "10 pieces",
+      "kitchen_name": "炸带子",
+      "price_cents": 750,
+      "confirm": "Site says 'From' this price: confirm the plain price and the make-it-a-meal upcharge.",
+      "option_groups": [
+        {
+          "name": "Meal",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Make it a meal with a side",
+              "price_cents": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general-tsos-chicken-combo",
+      "name": "General Tso's Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "General Tso's Chicken combination plate",
+        "General Tso's Chicken combination",
+        "General Tso's Chicken combo plate",
+        "General Tso's Chicken dinner combo",
+        "general chicken combo",
+        "general tso combo",
+        "general tso's combination",
+        "general chicken combination"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "General Tso's Chicken",
+      "kitchen_name": "左宗鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sesame-chicken-combo",
+      "name": "Sesame Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Sesame Chicken combination plate",
+        "Sesame Chicken combination",
+        "Sesame Chicken combo plate",
+        "Sesame Chicken dinner combo"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Sesame Chicken",
+      "kitchen_name": "芝麻鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orange-chicken-combo",
+      "name": "Orange Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Orange Chicken combination plate",
+        "Orange Chicken combination",
+        "Orange Chicken combo plate",
+        "Orange Chicken dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Orange Chicken",
+      "kitchen_name": "陈皮鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bourbon-chicken-combo",
+      "name": "Bourbon Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Bourbon Chicken combination plate",
+        "Bourbon Chicken combination",
+        "Bourbon Chicken combo plate",
+        "Bourbon Chicken dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Bourbon Chicken",
+      "kitchen_name": "波本鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet-and-sour-chicken-combo",
+      "name": "Sweet and Sour Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Sweet and Sour Chicken combination plate",
+        "Sweet and Sour Chicken combination",
+        "Sweet and Sour Chicken combo plate",
+        "Sweet and Sour Chicken dinner combo",
+        "Sweet & Sour Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Sweet and Sour Chicken",
+      "kitchen_name": "甜酸鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet-and-sour-pork-combo",
+      "name": "Sweet and Sour Pork Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Sweet and Sour Pork combination plate",
+        "Sweet and Sour Pork combination",
+        "Sweet and Sour Pork combo plate",
+        "Sweet and Sour Pork dinner combo",
+        "Sweet & Sour Pork"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Sweet and Sour Pork",
+      "kitchen_name": "甜酸肉 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-broccoli-combo",
+      "name": "Chicken with Broccoli Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Chicken with Broccoli combination plate",
+        "Chicken with Broccoli combination",
+        "Chicken with Broccoli combo plate",
+        "Chicken with Broccoli dinner combo",
+        "Broccoli Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Chicken with Broccoli",
+      "kitchen_name": "芥兰鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-cashew-nuts-combo",
+      "name": "Chicken with Cashew Nuts Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Chicken with Cashew Nuts combination plate",
+        "Chicken with Cashew Nuts combination",
+        "Chicken with Cashew Nuts combo plate",
+        "Chicken with Cashew Nuts dinner combo",
+        "Cashew Nuts Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Chicken with Cashew Nuts",
+      "kitchen_name": "腰果鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-garlic-sauce-combo",
+      "name": "Chicken with Garlic Sauce Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Chicken with Garlic Sauce combination plate",
+        "Chicken with Garlic Sauce combination",
+        "Chicken with Garlic Sauce combo plate",
+        "Chicken with Garlic Sauce dinner combo",
+        "Garlic Sauce Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Chicken with Garlic Sauce",
+      "kitchen_name": "鱼香鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunan-chicken-combo",
+      "name": "Hunan Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Hunan Chicken combination plate",
+        "Hunan Chicken combination",
+        "Hunan Chicken combo plate",
+        "Hunan Chicken dinner combo"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Hunan Chicken",
+      "kitchen_name": "湖南鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "szechuan-chicken-combo",
+      "name": "Szechuan Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Szechuan Chicken combination plate",
+        "Szechuan Chicken combination",
+        "Szechuan Chicken combo plate",
+        "Szechuan Chicken dinner combo"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Szechuan Chicken",
+      "kitchen_name": "四川鸡 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kung-pao-chicken-combo",
+      "name": "Kung Pao Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Kung Pao Chicken combination plate",
+        "Kung Pao Chicken combination",
+        "Kung Pao Chicken combo plate",
+        "Kung Pao Chicken dinner combo"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Kung Pao Chicken",
+      "kitchen_name": "宫保鸡丁 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teriyaki-chicken-combo",
+      "name": "Teriyaki Chicken Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Teriyaki Chicken combination plate",
+        "Teriyaki Chicken combination",
+        "Teriyaki Chicken combo plate",
+        "Teriyaki Chicken dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Teriyaki Chicken",
+      "kitchen_name": "照烧鸡串 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-chicken-with-onions-combo",
+      "name": "Curry Chicken with Onions Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Curry Chicken with Onions combination plate",
+        "Curry Chicken with Onions combination",
+        "Curry Chicken with Onions combo plate",
+        "Curry Chicken with Onions dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Curry Chicken with Onions",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moo-goo-gai-pan-combo",
+      "name": "Moo Goo Gai Pan Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Moo Goo Gai Pan combination plate",
+        "Moo Goo Gai Pan combination",
+        "Moo Goo Gai Pan combo plate",
+        "Moo Goo Gai Pan dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Moo Goo Gai Pan",
+      "kitchen_name": "蘑菇鸡片 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-chow-mein-combo",
+      "name": "Chicken Chow Mein Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Chicken Chow Mein combination plate",
+        "Chicken Chow Mein combination",
+        "Chicken Chow Mein combo plate",
+        "Chicken Chow Mein dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Chicken Chow Mein",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pepper-steak-combo",
+      "name": "Pepper Steak Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Pepper Steak combination plate",
+        "Pepper Steak combination",
+        "Pepper Steak combo plate",
+        "Pepper Steak dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Pepper Steak",
+      "kitchen_name": "青椒牛 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-chinese-vegetables-combo",
+      "name": "Beef with Chinese Vegetables Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Beef with Chinese Vegetables combination plate",
+        "Beef with Chinese Vegetables combination",
+        "Beef with Chinese Vegetables combo plate",
+        "Beef with Chinese Vegetables dinner combo",
+        "Chinese Vegetables Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Beef with Chinese Vegetables",
+      "kitchen_name": "唐菜牛 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-garlic-sauce-combo",
+      "name": "Beef with Garlic Sauce Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Beef with Garlic Sauce combination plate",
+        "Beef with Garlic Sauce combination",
+        "Beef with Garlic Sauce combo plate",
+        "Beef with Garlic Sauce dinner combo",
+        "Garlic Sauce Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Beef with Garlic Sauce",
+      "kitchen_name": "鱼香牛 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "szechuan-beef-combo",
+      "name": "Szechuan Beef Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Szechuan Beef combination plate",
+        "Szechuan Beef combination",
+        "Szechuan Beef combo plate",
+        "Szechuan Beef dinner combo"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Szechuan Beef",
+      "kitchen_name": "四川牛 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-beef-with-onions-combo",
+      "name": "Curry Beef with Onions Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Curry Beef with Onions combination plate",
+        "Curry Beef with Onions combination",
+        "Curry Beef with Onions combo plate",
+        "Curry Beef with Onions dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Curry Beef with Onions",
+      "kitchen_name": "咖喱牛 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-onion-combo",
+      "name": "Beef with Onion Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Beef with Onion combination plate",
+        "Beef with Onion combination",
+        "Beef with Onion combo plate",
+        "Beef with Onion dinner combo",
+        "Onion Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Beef with Onion",
+      "kitchen_name": "洋葱牛 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbq-spare-ribs-combo",
+      "name": "BBQ Spare Ribs Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "BBQ Spare Ribs combination plate",
+        "BBQ Spare Ribs combination",
+        "BBQ Spare Ribs combo plate",
+        "BBQ Spare Ribs dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "BBQ Spare Ribs",
+      "kitchen_name": "烧排骨 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbq-boneless-ribs-combo",
+      "name": "BBQ Boneless Ribs Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "BBQ Boneless Ribs combination plate",
+        "BBQ Boneless Ribs combination",
+        "BBQ Boneless Ribs combo plate",
+        "BBQ Boneless Ribs dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "BBQ Boneless Ribs",
+      "kitchen_name": "无骨烧排 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-chinese-vegetables-combo",
+      "name": "Roast Pork with Chinese Vegetables Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Roast Pork with Chinese Vegetables combination plate",
+        "Roast Pork with Chinese Vegetables combination",
+        "Roast Pork with Chinese Vegetables combo plate",
+        "Roast Pork with Chinese Vegetables dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Roast Pork with Chinese Vegetables",
+      "kitchen_name": "唐菜叉烧 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-with-onion-combo",
+      "name": "Roast Pork with Onion Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Roast Pork with Onion combination plate",
+        "Roast Pork with Onion combination",
+        "Roast Pork with Onion combo plate",
+        "Roast Pork with Onion dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Roast Pork with Onion",
+      "kitchen_name": "洋葱叉烧 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-lo-mein-combo",
+      "name": "Roast Pork Lo Mein Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Roast Pork Lo Mein combination plate",
+        "Roast Pork Lo Mein combination",
+        "Roast Pork Lo Mein combo plate",
+        "Roast Pork Lo Mein dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Roast Pork Lo Mein",
+      "kitchen_name": "叉烧捞面 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roast-pork-egg-foo-young-combo",
+      "name": "Roast Pork Egg Foo Young Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Roast Pork Egg Foo Young combination plate",
+        "Roast Pork Egg Foo Young combination",
+        "Roast Pork Egg Foo Young combo plate",
+        "Roast Pork Egg Foo Young dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Roast Pork Egg Foo Young",
+      "kitchen_name": "叉烧芙蓉蛋 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-lobster-sauce-combo",
+      "name": "Shrimp with Lobster Sauce Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Shrimp with Lobster Sauce combination plate",
+        "Shrimp with Lobster Sauce combination",
+        "Shrimp with Lobster Sauce combo plate",
+        "Shrimp with Lobster Sauce dinner combo",
+        "Lobster Sauce Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Shrimp with Lobster Sauce",
+      "kitchen_name": "虾龙糊 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-broccoli-combo",
+      "name": "Shrimp with Broccoli Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Shrimp with Broccoli combination plate",
+        "Shrimp with Broccoli combination",
+        "Shrimp with Broccoli combo plate",
+        "Shrimp with Broccoli dinner combo",
+        "Broccoli Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Shrimp with Broccoli",
+      "kitchen_name": "芥兰虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-chinese-vegetables-combo",
+      "name": "Shrimp with Chinese Vegetables Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Shrimp with Chinese Vegetables combination plate",
+        "Shrimp with Chinese Vegetables combination",
+        "Shrimp with Chinese Vegetables combo plate",
+        "Shrimp with Chinese Vegetables dinner combo",
+        "Chinese Vegetables Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Shrimp with Chinese Vegetables",
+      "kitchen_name": "唐菜虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-garlic-sauce-combo",
+      "name": "Shrimp with Garlic Sauce Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Shrimp with Garlic Sauce combination plate",
+        "Shrimp with Garlic Sauce combination",
+        "Shrimp with Garlic Sauce combo plate",
+        "Shrimp with Garlic Sauce dinner combo",
+        "Garlic Sauce Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Shrimp with Garlic Sauce",
+      "kitchen_name": "鱼香虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "szechuan-shrimp-combo",
+      "name": "Szechuan Shrimp Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Szechuan Shrimp combination plate",
+        "Szechuan Shrimp combination",
+        "Szechuan Shrimp combo plate",
+        "Szechuan Shrimp dinner combo"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Szechuan Shrimp",
+      "kitchen_name": "四川虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kung-pao-shrimp-combo",
+      "name": "Kung Pao Shrimp Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Kung Pao Shrimp combination plate",
+        "Kung Pao Shrimp combination",
+        "Kung Pao Shrimp combo plate",
+        "Kung Pao Shrimp dinner combo"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Kung Pao Shrimp",
+      "kitchen_name": "宫保虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-shrimp-with-onions-combo",
+      "name": "Curry Shrimp with Onions Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Curry Shrimp with Onions combination plate",
+        "Curry Shrimp with Onions combination",
+        "Curry Shrimp with Onions combo plate",
+        "Curry Shrimp with Onions dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Curry Shrimp with Onions",
+      "kitchen_name": "咖喱虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-onion-combo",
+      "name": "Shrimp with Onion Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Shrimp with Onion combination plate",
+        "Shrimp with Onion combination",
+        "Shrimp with Onion combo plate",
+        "Shrimp with Onion dinner combo",
+        "Onion Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Shrimp with Onion",
+      "kitchen_name": "洋葱虾 套餐",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-chow-mein-combo",
+      "name": "Shrimp Chow Mein Combo",
+      "category": "Combination Plates",
+      "aliases": [
+        "Shrimp Chow Mein combination plate",
+        "Shrimp Chow Mein combination",
+        "Shrimp Chow Mein combo plate",
+        "Shrimp Chow Mein dinner combo"
+      ],
+      "tags": [],
+      "includes": [
+        "Pork Fried Rice",
+        "Pork Egg Roll"
+      ],
+      "short_name": "Shrimp Chow Mein",
+      "price_cents": 1025,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            },
+            {
+              "name": "Vegetable Fried Rice"
+            }
+          ]
+        },
+        {
+          "name": "Roll",
+          "min": 0,
+          "max": 1,
+          "replaces": "Pork Egg Roll",
+          "options": [
+            {
+              "name": "Shrimp Roll",
+              "price_cents": 10
+            },
+            {
+              "name": "Vegetable Spring Roll"
+            },
+            {
+              "name": "No Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general-tsos-chicken-special",
+      "name": "General Tso's Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "General Tso's Chicken all day special",
+        "General Tso's Chicken lunch special",
+        "General Tso's Chicken daily special",
+        "general chicken special",
+        "general tso special"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "General Tso's Chicken",
+      "description": "Spicy, tangy General Tso's chicken.",
+      "kitchen_name": "左宗鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sesame-chicken-special",
+      "name": "Sesame Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Sesame Chicken all day special",
+        "Sesame Chicken lunch special",
+        "Sesame Chicken daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Sesame Chicken",
+      "description": "Sweet sesame chicken.",
+      "kitchen_name": "芝麻鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orange-chicken-special",
+      "name": "Orange Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Orange Chicken all day special",
+        "Orange Chicken lunch special",
+        "Orange Chicken daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Orange Chicken",
+      "description": "Chicken in a tangy orange sauce.",
+      "kitchen_name": "陈皮鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bourbon-chicken-special",
+      "name": "Bourbon Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Bourbon Chicken all day special",
+        "Bourbon Chicken lunch special",
+        "Bourbon Chicken daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Bourbon Chicken",
+      "description": "Chicken in a bourbon sauce.",
+      "kitchen_name": "波本鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet-and-sour-chicken-special",
+      "name": "Sweet and Sour Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Sweet and Sour Chicken all day special",
+        "Sweet and Sour Chicken lunch special",
+        "Sweet and Sour Chicken daily special",
+        "Sweet & Sour Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Sweet and Sour Chicken",
+      "description": "Crispy chicken in sweet and sour sauce.",
+      "kitchen_name": "甜酸鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-broccoli-special",
+      "name": "Chicken with Broccoli Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Chicken with Broccoli all day special",
+        "Chicken with Broccoli lunch special",
+        "Chicken with Broccoli daily special",
+        "Broccoli Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Chicken with Broccoli",
+      "description": "Chicken stir-fried with broccoli.",
+      "kitchen_name": "芥兰鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-mixed-vegetables-special",
+      "name": "Chicken with Mixed Vegetables Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Chicken with Mixed Vegetables all day special",
+        "Chicken with Mixed Vegetables lunch special",
+        "Chicken with Mixed Vegetables daily special",
+        "Mixed Vegetables Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Chicken with Mixed Vegetables",
+      "description": "Chicken stir-fried with mixed vegetables.",
+      "kitchen_name": "什菜鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-with-cashew-nuts-special",
+      "name": "Chicken with Cashew Nuts Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Chicken with Cashew Nuts all day special",
+        "Chicken with Cashew Nuts lunch special",
+        "Chicken with Cashew Nuts daily special",
+        "Cashew Nuts Chicken"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Chicken with Cashew Nuts",
+      "description": "Chicken stir-fried with cashews and vegetables.",
+      "kitchen_name": "腰果鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curry-chicken-special",
+      "name": "Curry Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Curry Chicken all day special",
+        "Curry Chicken lunch special",
+        "Curry Chicken daily special"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Curry Chicken",
+      "description": "Chicken in a spicy curry sauce.",
+      "kitchen_name": "咖喱鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunan-chicken-special",
+      "name": "Hunan Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Hunan Chicken all day special",
+        "Hunan Chicken lunch special",
+        "Hunan Chicken daily special"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Hunan Chicken",
+      "description": "Spicy Hunan-style chicken with vegetables.",
+      "kitchen_name": "湖南鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "szechuan-chicken-special",
+      "name": "Szechuan Chicken Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Szechuan Chicken all day special",
+        "Szechuan Chicken lunch special",
+        "Szechuan Chicken daily special"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Szechuan Chicken",
+      "description": "Chicken in a spicy Szechuan sauce.",
+      "kitchen_name": "四川鸡 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teriyaki-chicken-on-a-stick-special",
+      "name": "Teriyaki Chicken on a Stick Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Teriyaki Chicken on a Stick all day special",
+        "Teriyaki Chicken on a Stick lunch special",
+        "Teriyaki Chicken on a Stick daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Teriyaki Chicken on a Stick",
+      "description": "Skewered chicken marinated in teriyaki sauce.",
+      "kitchen_name": "照烧鸡串 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-wings-with-fries-special",
+      "name": "Chicken Wings with Fries Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Chicken Wings with Fries all day special",
+        "Chicken Wings with Fries lunch special",
+        "Chicken Wings with Fries daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Chicken Wings with Fries",
+      "description": "Crispy chicken wings with fries.",
+      "kitchen_name": "鸡翅薯条 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-egg-foo-young-special",
+      "name": "Chicken Egg Foo Young Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Chicken Egg Foo Young all day special",
+        "Chicken Egg Foo Young lunch special",
+        "Chicken Egg Foo Young daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Chicken Egg Foo Young",
+      "description": "Chinese omelet with chicken and vegetables.",
+      "kitchen_name": "鸡芙蓉蛋 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-chow-mein-special",
+      "name": "Chicken Chow Mein Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Chicken Chow Mein all day special",
+        "Chicken Chow Mein lunch special",
+        "Chicken Chow Mein daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Chicken Chow Mein",
+      "description": "Chicken with vegetables and crispy noodles.",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-broccoli-special",
+      "name": "Beef with Broccoli Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Beef with Broccoli all day special",
+        "Beef with Broccoli lunch special",
+        "Beef with Broccoli daily special",
+        "Broccoli Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Beef with Broccoli",
+      "description": "Beef stir-fried with broccoli.",
+      "kitchen_name": "芥兰牛 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beef-with-mixed-vegetables-special",
+      "name": "Beef with Mixed Vegetables Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Beef with Mixed Vegetables all day special",
+        "Beef with Mixed Vegetables lunch special",
+        "Beef with Mixed Vegetables daily special",
+        "Mixed Vegetables Beef"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Beef with Mixed Vegetables",
+      "description": "Beef stir-fried with mixed vegetables.",
+      "kitchen_name": "什菜牛 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boneless-spare-ribs-special",
+      "name": "Boneless Spare Ribs Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Boneless Spare Ribs all day special",
+        "Boneless Spare Ribs lunch special",
+        "Boneless Spare Ribs daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Boneless Spare Ribs",
+      "description": "Juicy boneless spare ribs.",
+      "kitchen_name": "无骨排骨 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-special-lo-mein-special",
+      "name": "House Special Lo Mein Special",
+      "category": "All Day Special",
+      "aliases": [
+        "House Special Lo Mein all day special",
+        "House Special Lo Mein lunch special",
+        "House Special Lo Mein daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "House Special Lo Mein",
+      "description": "Meats and vegetables with soft noodles.",
+      "kitchen_name": "本楼捞面 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-shrimp-special",
+      "name": "Fried Shrimp Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Fried Shrimp all day special",
+        "Fried Shrimp lunch special",
+        "Fried Shrimp daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Fried Shrimp",
+      "description": "Golden, crispy fried shrimp.",
+      "kitchen_name": "炸虾 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-broccoli-special",
+      "name": "Shrimp with Broccoli Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Shrimp with Broccoli all day special",
+        "Shrimp with Broccoli lunch special",
+        "Shrimp with Broccoli daily special",
+        "Broccoli Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Shrimp with Broccoli",
+      "description": "Shrimp stir-fried with broccoli.",
+      "kitchen_name": "芥兰虾 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-with-mixed-vegetables-special",
+      "name": "Shrimp with Mixed Vegetables Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Shrimp with Mixed Vegetables all day special",
+        "Shrimp with Mixed Vegetables lunch special",
+        "Shrimp with Mixed Vegetables daily special",
+        "Mixed Vegetables Shrimp"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Shrimp with Mixed Vegetables",
+      "description": "Shrimp stir-fried with mixed vegetables.",
+      "kitchen_name": "什菜虾 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunan-shrimp-special",
+      "name": "Hunan Shrimp Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Hunan Shrimp all day special",
+        "Hunan Shrimp lunch special",
+        "Hunan Shrimp daily special"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Hunan Shrimp",
+      "description": "Spicy Hunan-style shrimp with vegetables.",
+      "kitchen_name": "湖南虾 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "szechuan-shrimp-special",
+      "name": "Szechuan Shrimp Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Szechuan Shrimp all day special",
+        "Szechuan Shrimp lunch special",
+        "Szechuan Shrimp daily special"
+      ],
+      "tags": [
+        "spicy"
+      ],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Szechuan Shrimp",
+      "description": "Shrimp in a spicy Szechuan sauce.",
+      "kitchen_name": "四川虾 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Spice level",
+          "min": 0,
+          "max": 1,
+          "options": [
+            {
+              "name": "Mild"
+            },
+            {
+              "name": "Medium"
+            },
+            {
+              "name": "Hot"
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-egg-foo-young-special",
+      "name": "Shrimp Egg Foo Young Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Shrimp Egg Foo Young all day special",
+        "Shrimp Egg Foo Young lunch special",
+        "Shrimp Egg Foo Young daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Shrimp Egg Foo Young",
+      "description": "Chinese omelet with shrimp and vegetables.",
+      "kitchen_name": "虾芙蓉蛋 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp-chow-mein-special",
+      "name": "Shrimp Chow Mein Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Shrimp Chow Mein all day special",
+        "Shrimp Chow Mein lunch special",
+        "Shrimp Chow Mein daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Shrimp Chow Mein",
+      "description": "Shrimp with vegetables and crispy noodles.",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-scallops-special",
+      "name": "Fried Scallops Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Fried Scallops all day special",
+        "Fried Scallops lunch special",
+        "Fried Scallops daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Fried Scallops",
+      "description": "Golden fried scallops.",
+      "kitchen_name": "炸带子 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fried-crab-sticks-special",
+      "name": "Fried Crab Sticks Special",
+      "category": "All Day Special",
+      "aliases": [
+        "Fried Crab Sticks all day special",
+        "Fried Crab Sticks lunch special",
+        "Fried Crab Sticks daily special"
+      ],
+      "tags": [],
+      "includes": [
+        "Fried Rice"
+      ],
+      "short_name": "Fried Crab Sticks",
+      "description": "Golden fried crab sticks.",
+      "kitchen_name": "炸蟹柳 特餐",
+      "price_cents": 825,
+      "option_groups": [
+        {
+          "name": "Rice",
+          "min": 0,
+          "max": 1,
+          "replaces": "Fried Rice",
+          "options": [
+            {
+              "name": "White Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steamed-rice",
+      "name": "Steamed Rice",
+      "category": "Sides & Drinks",
+      "aliases": [
+        "white rice",
+        "plain rice"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "Fluffy steamed white rice.",
+      "kitchen_name": "白饭",
+      "sizes": [
+        {
+          "name": "Pint",
+          "price_cents": 250
+        },
+        {
+          "name": "Quart",
+          "price_cents": 450
+        }
+      ]
+    },
+    {
+      "id": "fried-noodles",
+      "name": "Fried Noodles",
+      "category": "Sides & Drinks",
+      "aliases": [],
+      "tags": [],
+      "includes": [],
+      "description": "Crispy fried noodles.",
+      "kitchen_name": "炸面",
+      "price_cents": 50
+    },
+    {
+      "id": "fortune-cookies",
+      "name": "Fortune Cookies",
+      "category": "Sides & Drinks",
+      "aliases": [
+        "Fortune Cookies (5)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "5 pieces. Five fortune cookies.",
+      "kitchen_name": "签语饼",
+      "price_cents": 75
+    },
+    {
+      "id": "homemade-sweet-tea",
+      "name": "Homemade Sweet Tea",
+      "category": "Sides & Drinks",
+      "aliases": [
+        "Homemade Sweet Tea (large)",
+        "sweet tea",
+        "iced tea"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "Large homemade sweet tea, chilled.",
+      "kitchen_name": "甜茶",
+      "price_cents": 250
+    },
+    {
+      "id": "lemonade",
+      "name": "Lemonade",
+      "category": "Sides & Drinks",
+      "aliases": [
+        "Lemonade (large)"
+      ],
+      "tags": [],
+      "includes": [],
+      "description": "Large lemonade.",
+      "kitchen_name": "柠檬水",
+      "price_cents": 250
+    }
+  ]
+}
