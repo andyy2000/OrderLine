@@ -2,7 +2,7 @@
 
 An AI that answers a restaurant's phone and takes takeout orders. The order shows up on a tablet in the kitchen and prints on the receipt printer.
 
-I grew up working at my family's Chinese takeout place. On a busy night the phone rings nonstop, and whoever picks up has to stop cooking or packing orders. This is my attempt to fix that. It runs on the real Top's China menu (210 items).
+I grew up working at my family's Chinese takeout place. On a busy night the phone rings nonstop, and whoever picks up has to stop cooking or packing orders. This is my attempt to fix that.
 
 ## How it works
 
