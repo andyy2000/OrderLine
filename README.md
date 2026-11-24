@@ -42,4 +42,4 @@ Real phone calls need Twilio, Deepgram and Cartesia accounts. Copy `.env.example
 
 ## Where it stands
 
-It works on real test calls and has about 100 automated tests. It isn't live at the restaurant yet. A few menu details (the exact tax rate and some prices) still have to be confirmed with the owner. They're listed in `data/menus/tops-china.REVIEW.md`.
+It works on real test calls and has about 100 automated tests. A few menu details (the exact tax rate and some prices) still have to be confirmed with the owner. They're listed in `data/menus/tops-china.REVIEW.md`.
